@@ -1,6 +1,10 @@
-import Fastify from "fastify";
+import { app } from './app';
 
-const fastify = Fastify({
-  logger: true,
-});
-
+app
+  .listen({
+    port: 3333,
+    host: 'RENDER' in process.env ? `0.0.0.0` : `localhost`,
+  })
+  .then(() => {
+    console.log('HTTP Server Running 🔥! http://localhost:3333/')
+  })

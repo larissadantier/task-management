@@ -5,13 +5,23 @@
     "lib": [
       "es2023"
     ],
-    "module": "node16",
     "target": "es2022",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "moduleResolution": "node16",
-    "outDir": "./build",
-    "rootDir": "./src",
-  }
+    "moduleResolution": "bundler",
+    "paths": {
+      "*": [
+        "*"
+      ]
+    },
+    "baseUrl": "./src",
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
 }
