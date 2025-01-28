@@ -2,7 +2,7 @@ version: '4.37'
 
 services:
  postgres:
-  image: bitnami/postgresql:latest
+  image: bitnami/postgresql
   container_name: task_management
   environment:
     POSTGRES_USER: ${POSTGRES_USER}

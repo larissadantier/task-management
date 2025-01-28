@@ -6,8 +6,9 @@
   "type": "module",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "start": "node build/server.js",
-    "dev": "tsx watch src/server.ts"
+    "start:dev": "tsx watch src/server.ts",
+    "docker:up": "docker compose up -d",
+    "docker:stop": "docker compose stop"
   },
   "keywords": [],
   "author": "",
