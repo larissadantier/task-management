@@ -1,0 +1,12 @@
+version: '4.37'
+
+services:
+ postgres:
+  image: bitnami/postgresql:latest
+  container_name: task_management
+  environment:
+    POSTGRES_USER: root
+    POSTGRES_PASSWORD: root
+    POSTGRES_DB: task_management
+  ports:
+    - "5432:5432"
